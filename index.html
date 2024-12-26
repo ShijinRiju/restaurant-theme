@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Restaurant</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    
+    <section class="home-banner">
+      <div class="container h-100">
+        <div class="banner-text h-100">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/best-bakers.png" alt="Best Bakers" />
+          </a>
+          <div class="banner-content">
+            <h1>Best Bakers</h1>
+            <p>Service & Quality is our language.</p>
+          </div>
+          <div class="search-wrapper">
+            <form class="d-flex search-form" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <button class="btn search-btn" type="button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="toggle-sec">
+              <span class="category-label">Non-veg</span>
+              <div class="toggle">
+                <input type="checkbox" id="mode-toggle" class="toggle__input" />
+                <label for="mode-toggle" class="toggle__label"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="category-section py-20">
+      <div class="container-fluid">
+        <h2 class="mb-0">Categories</h2>
+        <div class="category-slider">
+          <a href="#" class="category-item" data-target="all">
+            <img src="assets/images/all-widget.png" alt="All" />
+            <label>All</label>
+          </a>
+          <a href="#" class="category-item" data-target="coffee">
+            <img src="assets/images/coffee.png" alt="Coffee" />
+            <label>Coffee</label>
+          </a>
+          <a href="#" class="category-item" data-target="biriyani">
+            <img src="assets/images/biriyani.png" alt="Biriyani" />
+            <label>Biriyani</label>
+          </a>
+          <a href="#" class="category-item" data-target="cakes">
+            <img src="assets/images/cakes.png" alt="Cakes" />
+            <label>Cakes</label>
+          </a>
+          <a href="#" class="category-item" data-target="veg">
+            <img src="assets/images/veg.png" alt="Veg" />
+            <label>Pure Veg</label>
+          </a>
+          <a href="#" class="category-item" data-target="burger">
+            <img src="assets/images/burger-cat.png" alt="Burger" />
+            <label>Burger</label>
+          </a>
+          <a href="#" class="category-item" data-target="pizza">
+            <img src="assets/images/pizza-cat.png" alt="Pizza" />
+            <label>Pizza</label>
+          </a>
+          <a href="#" class="category-item" data-target="snacks">
+            <img src="assets/images/snacks.png" alt="Snacks" />
+            <label>Snacks</label>
+          </a>
+          <a href="#" class="category-item" data-target="shakes">
+            <img src="assets/images/shakes.png" alt="Shakes" />
+            <label>Shakes</label>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="rest-products">
+      <div class="container">
+        <h2 class="mb-0">Our Menu</h2>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="product-card" data-category="pizza">
+              <div class="row">
+                <div class="col-5">
+                  <div class="product-img">
+                    <img
+                      src="assets/images/pizza-1.jpg"
+                      class="img-fluid"
+                      alt="Dominos"
+                    />
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="product-content">
+                    <div class="product-top mb-3">
+                      <label class="product-label"
+                        ><i class="fa-solid fa-award"></i> Best in Pizza</label
+                      >
+                      <h2>Paneer Cheese Pizza</h2>
+                      <p class="text-gray">
+                        Our pizza is crafted with a hand-tossed crust, baked to
+                        golden perfection.
+                      </p>
+                    </div>
+                    <div class="product-price">
+                      <label> ₹ 239.00 </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="product-card" data-category="biriyani">
+              <div class="row">
+                <div class="col-5">
+                  <div class="product-img">
+                    <img
+                      src="assets/images/biriyani-1.jpg"
+                      class="img-fluid"
+                      alt="Dominos"
+                    />
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="product-content">
+                    <div class="product-top mb-3">
+                      <label class="product-label"
+                        ><i class="fa-solid fa-award"></i> Best in
+                        Biriyani</label
+                      >
+                      <h2>Chicken Biriyani</h2>
+                      <p class="text-gray">
+                        Our chicken biriyani is a flavorful symphony of spices
+                        and tender chicken, layered with fragrant basmati rice.
+                      </p>
+                    </div>
+                    <div class="product-price">
+                      <label> ₹ 150.00 </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="product-card" data-category="cakes">
+              <div class="row">
+                <div class="col-5">
+                  <div class="product-img">
+                    <img
+                      src="assets/images/cake-1.jpg"
+                      class="img-fluid"
+                      alt="Cake"
+                    />
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="product-content">
+                    <div class="product-top mb-3">
+                      <label class="product-label"
+                        ><i class="fa-solid fa-award"></i> Best in Cakes</label
+                      >
+                      <h2>Butterscotch Fresh Cream</h2>
+                      <p class="text-gray">
+                        Our butterscotch fresh cream cake is a heavenly blend of
+                        moist layers and creamy butterscotch richness.
+                      </p>
+                    </div>
+                    <div class="product-price">
+                      <label> ₹ 800.00 </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="product-card" data-category="burger">
+              <div class="row">
+                <div class="col-5">
+                  <div class="product-img">
+                    <img
+                      src="assets/images/burger-1.jpg"
+                      class="img-fluid"
+                      alt="Burger"
+                    />
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="product-content">
+                    <div class="product-top mb-3">
+                      <label class="product-label"
+                        ><i class="fa-solid fa-award"></i> Best in Burger</label
+                      >
+                      <h2>Zinger Burger</h2>
+                      <p class="text-gray">
+                        Our zinger burger is a crispy, juicy delight packed with
+                        bold spices and topped with fresh, zesty flavors.
+                      </p>
+                    </div>
+                    <div class="product-price">
+                      <label> ₹ 179.00 </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
